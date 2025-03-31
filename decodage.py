@@ -14,7 +14,7 @@ with old_message_path.open('r') as file:
 with key_old_message_path.open('r') as file:
     key_old_message = eval(file.read())
 
-# Affichage du message d'origine
+#Trier les clés
 def extract_and_sort_keys(old_message: str, key_old_message: set) -> list:
     words = set(old_message.split())
     keys = sorted(words - key_old_message)
